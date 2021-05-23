@@ -3,7 +3,7 @@
 use std::mem;
 
 pub fn run() {
-    let mut numbers: Vec<i32> = vec![1,2,3,4,5];
+    let mut numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
 
     // Re-assign values
     numbers[2] = 20;
@@ -26,8 +26,8 @@ pub fn run() {
     }
 
     // Loop and mutate values (kind of like a map in js)
-    for x in numbers.iter_mut(){
-        *x *=2;
+    for x in numbers.iter_mut() {
+        *x *= 2;
     }
     println!("{:?}", numbers);
 }
