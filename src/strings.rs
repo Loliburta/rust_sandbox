@@ -1,6 +1,11 @@
 // Primitive str = Immutable fixed-length string somewhere in the memory
 // String = Growable, heap-allocated data structure - Use when you need to modify or own string data
 pub fn run() {
+
+    // Not mutable str
+    let ab = "abc";
+
+    // Mutable String
     let mut hello = String::from("hello what is up dog");
 
     // Get length
@@ -34,8 +39,13 @@ pub fn run() {
     s.push('a');
 
     // assertion testing
-    assert_eq!(1,s.len());
-    assert_eq!(10,s.capacity());
+    assert_eq!(1, s.len());
+    assert_eq!(10, s.capacity());
 
     println!("{}", s);
 }
+
+
+/* Useful string methods
+.trim() removes whitespace at the beginning and end 
+*/
